@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.png">
 
-    <title>Kelvin - Bootstrap 3 Resume Theme</title>
+    <title>@pereirazc</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -21,6 +21,19 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     
     <script src="assets/js/jquery.min.js"></script>
+	
+	<script>	
+		$(window).load(function() {
+			var chosenValue = Math.random();
+			console.log(chosenValue);
+			if (chosenValue < 0.5) {
+				$('#headerwrap ').css('background-image', 'url(./assets/img/header-bg.jpg)');	
+			} else {
+				$('#headerwrap ').css('background-image', 'url(./assets/img/header-bg2.jpg) ');	
+			}
+		});
+	</script>	
+	
     <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
     <script src="assets/js/Chart.js"></script>
 
@@ -32,7 +45,6 @@
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#nav">
-
 	<div id="section-topbar">
 		<div id="topbar-inner">
 			<div class="container">
@@ -41,7 +53,7 @@
 						<ul id="nav" class="nav">
 							<li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
 							<li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="icon-briefcase"></i></a></li>
+							<!--<li class="menu-item"><a class="smoothScroll" href="#skillswrap" title="Skills"><i class="icon-wrench"></i></a></li> -->
 							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
 						</ul><!--/ uL#nav -->
 					</div><!-- /.dropdown -->
@@ -54,18 +66,29 @@
 		</div><!--/ #topbar-inner -->
 	</div><!--/ #section-topbar -->
 	
+		
 	<div id="headerwrap">
 		<div class="container">
 			<div class="row centered">
 				<div class="col-lg-12">
 					<h1>Isaac S. A. Pereira</h1>
-					<h3>Developer | pereirazc@gmail.com</h3>
+					<h3>Researcher & Developer | pereirazc@gmail.com</h3>
+				
+					<h2>
+						<table style="margin: 0 auto;">
+						  <tr>
+							<td style="width:40px"><a href="http://linkedin.com/in/pereirazc"><i class="icon-linkedin"></i></a></td>
+							<td style="width:40px"><a href="http://facebook.com/pereirazc"><i class="icon-facebook"></i></a></td>
+							<td style="width:40px"><a href="http://github.com/pereirazc"><i class="icon-github"></i></a></td>
+							<td style="width:40px"><a href="http://instagram.com/pereirazc"><i class="icon-instagram"></i></a></td>
+						  </tr>
+						</table>
+					</h2>					
+					
 				</div><!--/.col-lg-12 -->
 			</div><!--/.row -->
 		</div><!--/.container -->
 	</div><!--/.#headerwrap -->
-	
-
 	<section id="about" name="about"></section>
 	<div id="intro">
 		<div class="container">
@@ -75,10 +98,7 @@
 					<h5>ABOUT</h5>
 				</div>
 				<div class="col-lg-6">
-					<p>I'm web designer & front-end developer with 7 years of professional experience. I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. I also have skills in other fields like branding, icon design or web development.</p>
-				</div>
-				<div class="col-lg-3">
-					<p><a href="#"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
+					<p>I'm a Computer Science Bachelor with 7 years of development experience (3 of them as a Systems Analyst) and research skills. I'm interested in all kinds of IoT technologies, but my major focus is on designing context-aware/sensor-based applications, services and development tools for designing them as well.</p>
 				</div>
 				
 			</div><!--/.row -->
@@ -95,8 +115,9 @@
 					<h5>EDUCATION</h5>
 				</div>
 				<div class="col-lg-6">
-					<p><t>Master of Web Design</t><br/>
-						Federal University of Espirito Santo <br/>
+					<p><t>Master of Informatics</t><br/>
+						<more>Researching Context-aware application development, Quality of Context (QoC) and Situation-awareness</more> <br/>
+						<i class="icon-building"></i>&nbsp;&nbsp;&nbsp;Federal University of Espirito Santo <br/>
 						<i>2 Years Course</i>
 					</p>
 				</div>
@@ -107,8 +128,8 @@
 				</div>
 	
 				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Bachelor in Computer Science</t><br/>
-						Federal University of Espirito Santo <br/>
+					<p><t>Bachelor of Computer Science</t><br/>
+						<i class="icon-building"></i>&nbsp;&nbsp;&nbsp;Federal University of Espirito Santo <br/>
 						<i>4,5 Years Course</i>
 					</p>
 				</div>
@@ -130,24 +151,15 @@
 					<h5>WORK</h5>
 				</div>
 				<div class="col-lg-6">
-					<p><t>Front-end Developer</t><br/>
-						Black Tie Corp. <br/>
+					<p><t>Systems Analyst</t><br/>
+						<a href="http://linkedin.com/in/pereirazc">Conexo Projetos e Sistemas</a> <br/>
 					</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>
+					<!--<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>-->
 				</div>
 				<div class="col-lg-3">
-					<p><sm>AUGUST 2012 - CURRENT</sm></p>
+					<p><sm>FEB 2011 - CURRENT</sm></p>
 				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Web Designer - Intern</t><br/>
-						Onassis Ltd. <br/>
-					</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>JUNE 2010 - JULY 2012</sm></p>
-				</div>
+				
 		</div><!--/.row -->
 		<br>
 		<hr>
@@ -162,22 +174,22 @@
 					<h5>AWARDS</h5>
 				</div>
 				<div class="col-lg-6">
-					<p><t>Best Web Design</t><br/>
-						Black Tie Site <br/>
+					<p><t>Best Paper Award</t> <br/>
+						A Rule-based Platform for Situation Management <br/>
+						<a href="http://www.cogsima2013.org/">COGSIMA 2013</a><br/>
 					</p>
 				</div>
 				<div class="col-lg-3">
-					<p><sm>NOVEMBER 2013</sm></p>
+					<p><sm>FEBRUARY 2013</sm></p>
 				</div>
 	
 				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Designer of the Year</t><br/>
-						Awwwards Site
+					<p><t>Student Travel Grant Winner</t><br/>
+						<a href="http://www.cogsima2013.org/">COGSIMA 2013</a><br/>
 					</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>
 				</div>
 				<div class="col-lg-3">
-					<p><sm>2013</sm></p>
+					<p><sm>FEBRUARY 2013</sm></p>
 				</div>
 		
 		</div><!--/.row -->
@@ -186,6 +198,7 @@
 	
 	
 	<!--SKILLS DESCRIPTION -->
+	<!--
 	<div id="skillswrap">
 		<div class="container">
 			<div class="row">
@@ -193,6 +206,26 @@
 					<div class="col-lg-2 col-lg-offset-1">
 						<h5>SKILLS</h5>
 					</div>
+
+					<div class="col-lg-3 centered">
+						<canvas id="java" height="130" width="130"></canvas>
+						<p>Java (9/10)</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 90,
+										color:"#1abc9c"
+									},
+									{
+										value : 10,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					
 					<div class="col-lg-3 centered">
 						<canvas id="javascript" height="130" width="130"></canvas>
 						<p>Javascript</p>
@@ -211,26 +244,27 @@
 								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
+					
 					<div class="col-lg-3 centered">
-						<canvas id="bootstrap" height="130" width="130"></canvas>
-						<p>Java</p>
+						<canvas id="scala" height="130" width="130"></canvas>
+						<p>Scala</p>
 						<br>
 						<script>
 							var doughnutData = [
 									{
-										value: 90,
+										value: 30,
 										color:"#1abc9c"
 									},
 									{
-										value : 10,
+										value : 70,
 										color : "#ecf0f1"
 									}
 								];
-								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+								var myDoughnut = new Chart(document.getElementById("scala").getContext("2d")).Doughnut(doughnutData);
 						</script>
-					</div>
+					</div>					
 					<div class="col-lg-3 centered">
-						<canvas id="wordpress" height="130" width="130"></canvas>
+						<canvas id="delphi" height="130" width="130"></canvas>
 						<p>Delphi</p>
 						<br>
 						<script>
@@ -244,31 +278,13 @@
 										color : "#ecf0f1"
 									}
 								];
-								var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+								var myDoughnut = new Chart(document.getElementById("delphi").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					
-					<div class="col-lg-3 col-lg-offset-3 centered">
-						<canvas id="html" height="130" width="130"></canvas>
-						<p>HTML/CSS</p>
-						<br>
-						<script>
-							var doughnutData = [
-									{
-										value: 80,
-										color:"#1abc9c"
-									},
-									{
-										value : 20,
-										color : "#ecf0f1"
-									}
-								];
-								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
-						</script>
-					</div>
+	
 					<div class="col-lg-3 centered">
-						<canvas id="photoshop" height="130" width="130"></canvas>
-						<p>Drools</p>
+						<canvas id="drools" height="130" width="130"></canvas>
+						<p>JBoss Drools</p>
 						<br>
 						<script>
 							var doughnutData = [
@@ -281,80 +297,36 @@
 										color : "#ecf0f1"
 									}
 								];
-								var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+								var myDoughnut = new Chart(document.getElementById("drools").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
+
+	
 					<div class="col-lg-3 centered">
-						<canvas id="illustrator" height="130" width="130"></canvas>
-						<p>Illustrator</p>
+						<canvas id="angular" height="130" width="130"></canvas>
+						<p>AngularJS</p>
 						<br>
 						<script>
 							var doughnutData = [
 									{
-										value: 50,
+										value: 40,
 										color:"#1abc9c"
 									},
 									{
-										value : 50,
+										value : 60,
 										color : "#ecf0f1"
 									}
 								];
-								var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+								var myDoughnut = new Chart(document.getElementById("angular").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-
-			</div><!--/.row -->
+					
+					
+			</div>
 			<br>
-		</div><!--/.container -->
-	</div><!--/ #skillswrap -->
-
-
-
-	<section id="work" name="work"></section>
-	<!--PORTFOLIO DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
-				<br/>
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>PORTFOLIO</h5>
-				</div>
-				<div class="col-lg-6">
-					<p><img class="img-responsive" src="assets/img/port01.jpg" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-					<p>CANALS OF ENGLAND</p>
-				<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
-					<sm><i class="icon-tag"></i> design</sm></more> 
-				</p>
-				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port02.jpg" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-						<p>SANKEY</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
-						<sm><i class="icon-tag"></i> front-end</sm></more> 
-					</p>
-				</div>
-				
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><img class="img-responsive" src="assets/img/port03.jpg" alt=""></p>
-				</div>
-				<div class="col-lg-3">
-						<p>WE GROW</p>
-					<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br/><br/>
-						<sm><i class="icon-tag"></i> web design</sm></more> 
-					</p>
-				</div>
-		
-		</div><!--/.row -->
-		<br>
-		<br>
-	</div><!--/.container -->
-	
-
-
+		</div>
+	</div> -->
+	<!--/ #skillswrap -->
 	<section id="contact" name="contact"></section>
 	<!--FOOTER DESCRIPTION -->
 	<div id="footwrap">
@@ -366,40 +338,22 @@
 				</div>
 				<div class="col-lg-6">
 					<p><t>Email</t><br/>
-						william@blacktie.co <br/>
+						pereira.zc@gmail.com <br/>
 					</p>
 					<p><t>Adress</t><br/>
-						Some Ave. 987 <br/>
-						Postal 23892 <br/>
-						London, England. <br/>
+						Luiz Bandeira 14 <br/>
+						Santos Dumont <br/> 
+						29109-600 <br/>
+						Vila Velha - ES <br/>
 					</p>
 					<p><t>Phone</t><br/>
-						+55 8933-2383 <br/>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>SOCIAL LINKS</sm></p>
-					<p>
-						<a href="#"><i class="icon-dribbble"></i></a>
-						<a href="#"><i class="icon-twitter"></i></a>
-						<a href="#"><i class="icon-facebook"></i></a>
-						<a href="#"><i class="icon-linkedin"></i></a>
-						<a href="#"><i class="icon-apple"></i></a>
-
+						+55 27 98883-2834 <br/>
 					</p>
 				</div>
 			</div><!--/.row -->
 		</div><!--/.container -->
 	</div><!--/ #footer -->
 	
-	<div id="c">
-		<div class="container">
-			<p>Created by <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
-		
-		</div>
-	</div>
-	
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
