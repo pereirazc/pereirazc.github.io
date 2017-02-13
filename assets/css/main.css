@@ -92,7 +92,7 @@ a:after {
 }
 
 #topbar-inner {
-	background: #111;
+	background: #2c3e50;
 	line-height: 0;
 	text-align: center;
 }
@@ -108,7 +108,7 @@ a:after {
 	margin: 0;
 	padding: 0;
 
-	border-right: 1px solid #222;
+	/*border-right: 1px solid #222;*/
 
 	/* For IE, the outcast */
 	zoom:1;
@@ -127,23 +127,29 @@ a:after {
   font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-decoration: none;
   padding: 18px 20px 18px 20px;
-  border-left: 1px solid #222;
+  /*border-left: 1px solid #566472;*/
 }
 
 	#section-topbar ul#nav a:hover {
-	  background: #222;
+	  background: #566472;
 	  text-decoration: none;
-	  border-left: 1px solid #111;
 	}
 
 	#section-topbar ul#nav .active a {
-		background: #44bbaa;
-		border-left: 1px solid #111;
+		background: #566472;
+    color: #2c3e50;
 	}
 
 		#section-topbar ul#nav .active a:hover {
-			background: #44bbaa;
+			background: #566472;
+          color: #2c3e50;
 		}
+
+    #section-topbar ul#nav .active a:focus {
+			background: #566472;
+          color: #2c3e50;
+		}
+
 #section-topbar i {
 	font-size: 25px;
 }
@@ -153,16 +159,15 @@ a:after {
 
 /* Header Wrap */
 #headerwrap {
-	background: no-repeat center top;
-	background-repeat: no-repeat;
+	background-color: #566472;
 	margin-top: 60px;
-	padding-top:140px;
+	padding-top:90px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 500px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -188,10 +193,10 @@ a:after {
 
 #intro {
 	background: #2c3e50;
-	padding-top: 60px;
+	/*padding-top: 60px;*/
 	padding-bottom: 60px;
 	color: white;
-} 
+}
 
 #intro h5, p {
 	color: white;
@@ -256,6 +261,12 @@ a:after {
 
 /* Global Values */
 
+.avatar {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
 .desc {
 	padding-top: 50px;
 }
@@ -276,9 +287,15 @@ a:after {
 }
 
 .desc more {
-	color: #95a5a6;
+	color: ##566472;
 }
 
+.desc li {
+  	color: ##566472;
+}
+.desc ul li{
+  margin-left: -15px;
+}
 
 sm {
 	font-size: 12px;

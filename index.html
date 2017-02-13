@@ -14,27 +14,14 @@
 
     <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
-    
+
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-    
+
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    
+
     <script src="assets/js/jquery.min.js"></script>
-	
-	<script>	
-		$(window).load(function() {
-			var chosenValue = Math.random();
-			console.log(chosenValue);
-			if (chosenValue < 0.5) {
-				$('#headerwrap ').css('background-image', 'url(./assets/img/header-bg.jpg)');	
-			} else {
-				$('#headerwrap ').css('background-image', 'url(./assets/img/header-bg2.jpg) ');	
-			}
-		});
-	</script>	
-	
-    <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script>
     <script src="assets/js/Chart.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,7 +30,7 @@
       <script src="assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
-	
+
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -52,7 +39,7 @@
 	  ga('create', 'UA-47246894-1', 'pereirazc.github.io');
 	  ga('send', 'pageview');
 	</script>
-  
+
   <body data-spy="scroll" data-offset="0" data-target="#nav">
 	<div id="section-topbar">
 		<div id="topbar-inner">
@@ -74,15 +61,18 @@
 			<div class="clear"></div>
 		</div><!--/ #topbar-inner -->
 	</div><!--/ #section-topbar -->
-	
-		
+
+
 	<div id="headerwrap">
 		<div class="container">
 			<div class="row centered">
 				<div class="col-lg-12">
+
+          <img class="avatar" width="128px" src="https://i.stack.imgur.com/R337S.jpg"/>
+
 					<h1>Isaac Pereira</h1>
-					<h3>Researcher & Developer | pereirazc@gmail.com</h3>
-				
+					<h3>Developer & Researcher | pereirazc@gmail.com</h3>
+
 					<h2>
 						<table style="margin: 0 auto;">
 						  <tr>
@@ -92,8 +82,8 @@
 							<td style="width:40px"><a href="http://instagram.com/pereirazc"><i class="icon-instagram"></i></a></td>
 						  </tr>
 						</table>
-					</h2>					
-					
+					</h2>
+
 				</div><!--/.col-lg-12 -->
 			</div><!--/.row -->
 		</div><!--/.container -->
@@ -107,16 +97,51 @@
 					<h5>ABOUT</h5>
 				</div>
 				<div class="col-lg-6">
-					<p>I'm a Computer Science Bachelor with 7 years of development experience (3 of them as a Systems Analyst) and research skills. I'm interested in all kinds of IoT technologies, but my major focus is on designing context-aware/sensor-based applications, services and development tools for designing them as well.</p>
+					<p>I'm a software developer with 8 years of development experience (6 of them as a Systems Analyst) and research skills. I'm interested in all kinds of IoT technologies, but my major focus is on designing context-aware/situation-aware applications, services and tools to aid their development as well.</p>
 				</div>
-				
+
 			</div><!--/.row -->
 		</div><!--/.container -->
 	</div><!--/ #intro -->
 
 
 	<section id="resume" name="resume"></section>
-	<!--EDUCATION DESCRIPTION -->
+
+	<!--WORK DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+				<br/>
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>WORK</h5>
+				</div>
+				<div class="col-lg-6">
+					<p>
+            <t>Systems Analyst</t><br/>
+						<i class="icon-building"></i>&nbsp;&nbsp;&nbsp;<a href="https://www.linkedin.com/company/conexo-projetos-e-sistemas">Evológica Tecnologia e Pesquisa</a> <br/>
+            <more>
+              <b>Evológica</b> and, mainly, its branch <a href="https://www.linkedin.com/company/idexa-solu%C3%A7%C3%B5es-em-seguros">Idexa</a> have expertise in the modeling, development and support of Insurance Systems. <br />
+              My activities at <i>Evológica</i> involves:
+              <ul style="margin-top:-20px">
+                  <li>Framework development/support (<i>Curio</i> - Evológica's own internal framework)</li>
+                  <li>Design of internal dev tools for development experience improvement</li>
+                  <li>Leading dev teams towards development of products for the insurance market, like <a href="https://play.google.com/store/apps/details?id=br.com.idexa.eseg&hl=en">eSegurado</a></li>
+                  <li>Setting up environments for development, testing, and release of services.</li>
+                  <li>Team training and tutoring (<i>Git Workflow</i>, <i>Docker</i>, <i>Curio</i>, <i>SQL</i>, <i>Angular</i>)</li>
+              </ul>
+            </more>
+          </p>
+					<!--<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>-->
+				</div>
+				<div class="col-lg-3">
+					<p><sm>FEB 2011 - CURRENT</sm></p>
+				</div>
+
+		</div><!--/.row -->
+		<br>
+		<hr>
+	</div><!--/.container -->
+
+  <!--EDUCATION DESCRIPTION -->
 	<div class="container desc">
 		<div class="row">
 				<br/>
@@ -125,17 +150,19 @@
 				</div>
 				<div class="col-lg-6">
 					<p><t>Master of Informatics</t><br/>
-						<more>Researching Context-aware application development, Quality of Context (QoC) and Situation-awareness</more> <br/>
-						<i class="icon-building"></i>&nbsp;&nbsp;&nbsp;Federal University of Espirito Santo <br/>
-						<i>2 Years Course</i>
-					</p>
+            <i class="icon-building"></i>&nbsp;&nbsp;&nbsp;Federal University of Espirito Santo <br/>
+            <i>2 Years Course</i> <br/>
+						<more>Research on <i>Context-aware</i> application development techniques, <i>Quality of Context</i> (QoC) and <i>Situation-awareness</i>.<br />
+            Architect and Lead developer of the <a href="https://github.com/pextralabs/scene-platform">Scene Platform</a>, a rule-based framework for situation-aware application development.<br />
+            Co-author of 4 research papers and a book chapter about those subjects. One of them (<a href="http://ieeexplore.ieee.org/abstract/document/6523827/">A rule-based platform for situation management</a>) awarded with the *Best Paper award* at the IEEE CogSIMA 2013 Conference.</more>
+          </p>
 				</div>
 				<div class="col-lg-3">
-					<p><sm>GRADUATING IN AUGUST 2014</sm><br/>
-					<imp><sm>IN PROGRESS</sm></imp>
+					<p>
+            <sm>MARCH 2012 - 2014 (Interrupted)</sm><br/>
+					  <imp><sm>RESUMED IN 2017</sm></imp><br/>
 					</p>
 				</div>
-	
 				<div class="col-lg-6 col-lg-offset-3">
 					<p><t>Bachelor of Computer Science</t><br/>
 						<i class="icon-building"></i>&nbsp;&nbsp;&nbsp;Federal University of Espirito Santo <br/>
@@ -145,37 +172,82 @@
 				<div class="col-lg-3">
 					<p><sm>MARCH 2012</sm></p>
 				</div>
-	
+
 		</div><!--/.row -->
 		<br>
 		<hr>
 	</div><!--/.container -->
-	
-	
-	<!--WORK DESCRIPTION -->
+
+  <!--AWARDS DESCRIPTION -->
 	<div class="container desc">
 		<div class="row">
 				<br/>
 				<div class="col-lg-2 col-lg-offset-1">
-					<h5>WORK</h5>
+					<h5>PUBLICATIONS</h5>
 				</div>
 				<div class="col-lg-6">
-					<p><t>Systems Analyst</t><br/>
-						<a href="http://linkedin.com/in/pereirazc">Conexo Projetos e Sistemas</a> <br/>
+					<p>
+            <t><a href="http://ieeexplore.ieee.org/abstract/document/6337246/">A Model-Driven Approach to Situations: Situation Modeling and Rule-Based Situation Detection</a></t><br/>
+						<sm>IEEE International Enterprise Distributed Object Computing Conference (EDOC)</sm><br/>
 					</p>
-					<!--<p><more>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</more></p>-->
 				</div>
 				<div class="col-lg-3">
-					<p><sm>FEB 2011 - CURRENT</sm></p>
+					<p>
+            <sm>SEPTEMBER 2012</sm><br/>
+            <imp><sm>CONFERENCE PAPER</sm></imp>
+          </p>
 				</div>
-				
-		</div><!--/.row -->
+				<div class="col-lg-6 col-lg-offset-3">
+					<p>
+            <t><a href="http://ieeexplore.ieee.org/abstract/document/6523827/">A Rule-based Platform for Situation Management</a></t><br/>
+						<sm>IEEE International Multi-Disciplinary Cognitive Methods in Situation Awareness and Decision Support (CogSIMA)</sm><br/>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p>
+            <sm>FEBRUARY 2013</sm><br/>
+            <imp><sm>CONFERENCE PAPER</sm></imp>
+          </p>
+				</div>
+        <div class="col-lg-6 col-lg-offset-3">
+					<p>
+            <t>Um Serviço de Gerenciamento de Qualidade de Contexto em Redes de Sensores sem Fio</t><br/>
+						<sm>Conferência Ibero-Americana Computação Aplicada (CIACA)</sm><br/>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p>
+            <sm>DECEMBER 2013</sm><br/>
+            <imp><sm>CONFERENCE PAPER</sm></imp>
+          </p>
+				</div>
+        <div class="col-lg-6 col-lg-offset-3">
+					<p>
+            <t><a href="http://ieeexplore.ieee.org/abstract/document/6816563/">An Infrastructure for Distributed Rule-based Situation Management</a></t><br/>
+						<sm>IEEE International Multi-Disciplinary Cognitive Methods in Situation Awareness and Decision Support (CogSIMA)</sm><br/>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p>
+            <sm>FEBRUARY 2014</sm><br/>
+            <imp><sm>CONFERENCE PAPER</sm></imp>
+          </p>
+				</div>
+        <div class="col-lg-6 col-lg-offset-3">
+					<p>
+            <t><a href="http://link.springer.com/chapter/10.1007%2F978-3-319-22527-2_16">Rule-Based Support for Situation Management</a></t><br/>
+						<sm>Fusion Methodologies in Crisis Management</sm><br/>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p>
+            <sm>FEBRUARY 2014</sm><br/>
+            <imp><sm>BOOK CHAPTER</sm></imp>
+          </p>
+				</div>
+		</div>
 		<br>
-		<hr>
-	</div><!--/.container -->
-
-
-	<!--AWARDS DESCRIPTION -->
+	</div>
 	<div class="container desc">
 		<div class="row">
 				<br/>
@@ -191,7 +263,7 @@
 				<div class="col-lg-3">
 					<p><sm>FEBRUARY 2013</sm></p>
 				</div>
-	
+
 				<div class="col-lg-6 col-lg-offset-3">
 					<p><t>Student Travel Grant Winner</t><br/>
 						<a href="http://www.cogsima2013.org/">COGSIMA 2013</a><br/>
@@ -200,12 +272,12 @@
 				<div class="col-lg-3">
 					<p><sm>FEBRUARY 2013</sm></p>
 				</div>
-		
+
 		</div><!--/.row -->
 		<br>
 	</div><!--/.container -->
-	
-	
+
+
 	<!--SKILLS DESCRIPTION -->
 	<!--
 	<div id="skillswrap">
@@ -234,7 +306,7 @@
 								var myDoughnut = new Chart(document.getElementById("java").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					
+
 					<div class="col-lg-3 centered">
 						<canvas id="javascript" height="130" width="130"></canvas>
 						<p>Javascript</p>
@@ -253,7 +325,7 @@
 								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					
+
 					<div class="col-lg-3 centered">
 						<canvas id="scala" height="130" width="130"></canvas>
 						<p>Scala</p>
@@ -271,7 +343,7 @@
 								];
 								var myDoughnut = new Chart(document.getElementById("scala").getContext("2d")).Doughnut(doughnutData);
 						</script>
-					</div>					
+					</div>
 					<div class="col-lg-3 centered">
 						<canvas id="delphi" height="130" width="130"></canvas>
 						<p>Delphi</p>
@@ -290,7 +362,7 @@
 								var myDoughnut = new Chart(document.getElementById("delphi").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-	
+
 					<div class="col-lg-3 centered">
 						<canvas id="drools" height="130" width="130"></canvas>
 						<p>JBoss Drools</p>
@@ -310,7 +382,7 @@
 						</script>
 					</div>
 
-	
+
 					<div class="col-lg-3 centered">
 						<canvas id="angular" height="130" width="130"></canvas>
 						<p>AngularJS</p>
@@ -329,8 +401,8 @@
 								var myDoughnut = new Chart(document.getElementById("angular").getContext("2d")).Doughnut(doughnutData);
 						</script>
 					</div>
-					
-					
+
+
 			</div>
 			<br>
 		</div>
@@ -349,9 +421,9 @@
 					<p><t>Email</t><br/>
 						pereira.zc@gmail.com <br/>
 					</p>
-					<p><t>Adress</t><br/>
-						Luiz Bandeira 14 <br/>
-						Santos Dumont <br/> 
+					<p><t>Address</t><br/>
+						Luiz Bandeira 5 <br/>
+						Santos Dumont <br/>
 						29109-600 <br/>
 						Vila Velha - ES <br/>
 					</p>
@@ -361,7 +433,7 @@
 				</div>
 			</div><!--/.row -->
 		</div><!--/.container -->
-	</div><!--/ #footer -->	
+	</div><!--/ #footer -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
